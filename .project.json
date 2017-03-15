@@ -1,0 +1,60 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "buildRequired": true,
+    "lastBuildDateTime": "Mon, 06 Feb 2017 17:41:44 GMT"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationProject",
+      "templateVersion": "1.38.11",
+      "dateTimeStamp": "Fri, 23 Dec 2016 14:42:17 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Thu, 05 Jan 2017 19:43:22 GMT"
+    },
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Tue, 27 Dec 2016 13:30:58 GMT"
+    }
+  ],
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "de,en,es,fr",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "mockpreview": {
+    "mockUri": "/ArgentisoDtaServices/PortalServiceHana/Service/PortalService.xsodata/",
+    "metadataFilePath": "localService/metadata.xml",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "hcpdeploy": {
+    "account": "b44165a8f",
+    "name": "tutorial",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}

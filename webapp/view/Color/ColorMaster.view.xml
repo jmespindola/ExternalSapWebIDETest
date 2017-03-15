@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.ColorMaster">
+	<App>
+		
+			<Page title="Title" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					 <mvc:XMLView viewName="capu.view.Color.ColorPanel"/>
+					 <mvc:XMLView viewName="capu.view.Color.ColorList"/>
+				</content>
+			<footer>
+			    <Toolbar width="100%" id="__toolbar1">
+			        <content>
+			            <Button width="100px" id="__button0" activeIcon="sap-icon://add" text="New Color"/>
+			            <Button text="Cancel" width="100px" id="__button1" press="onNavBack"/>
+			        </content>
+			    </Toolbar>
+			</footer>
+			</Page>
+	
+	</App>
+</mvc:View>

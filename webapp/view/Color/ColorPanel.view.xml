@@ -1,0 +1,6 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.ColorMaster">
+
+	    <Panel id="__panel0" headerText="Color Panel">
+	    </Panel>
+
+</mvc:View>

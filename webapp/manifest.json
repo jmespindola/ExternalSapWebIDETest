@@ -1,0 +1,165 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "capu",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ApparelData.xsodata": {
+				"uri": "/ArgentisoDtaServices/webidetest/odata/ApparelData.xsodata/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_bluecrystal"
+		]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "capu.view.Login",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "capu.i18n.i18n"
+				}
+			},
+			"apparelmodels": {
+				"dataSource": "ApparelData.xsodata"
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "capu.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "login",
+					"target": "login"
+				},
+				{
+					"pattern": "view1",
+					"name": "view1",
+					"target": "view1"
+				},
+				{
+					"pattern": "overview",
+					"name": "overview",
+					"target": "overview"
+				},
+				{
+					"pattern": "detail/{modelPath}",
+					"name": "detail",
+					"target": "detail"
+				},
+				{
+					"pattern": "colormaster",
+					"name": "colormaster",
+					"target": "colormaster"
+				},
+				{
+					"pattern": "colordetail/{colorId}",
+					"name": "colordetail",
+					"target": "colordetail"
+				}
+			
+			],
+			"targets": {
+				
+				"login": {
+					"viewName": "Login"
+				},
+				"view1": {
+					"viewName": "View1"
+				},
+				"overview": {
+					"viewName": "Overview"
+				},
+				"detail": {
+					"viewName": "Detail"
+				},
+				"colormaster": {
+					"viewName": "Color.ColorMaster"
+				},
+				"colordetail": {
+					"viewName": "Color.ColorDetail"
+				},
+				"detailObjectNotFound": {
+					"viewName": "DetailObjectNotFound",
+					"viewId": "detailObjectNotFound"
+				},
+				"detailNoObjectsAvailable": {
+					"viewName": "DetailNoObjectsAvailable",
+					"viewId": "detailNoObjectsAvailable"
+				},
+				"notFound": {
+					"viewName": "NotFound",
+					"viewId": "notFound"
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

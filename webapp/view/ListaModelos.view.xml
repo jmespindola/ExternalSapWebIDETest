@@ -1,0 +1,43 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.ListaModelos">
+<Table class="sapUiResponsiveMargin" width="auto" id="modelList" items="{path : 'apparelmodels>/Model', sorter : {path : 'Code',group : false}}" headerText="{i18n>modellist}">
+  <headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>modellist}"/>
+            <ToolbarSpacer/>
+            <SearchField width="50%" search="onFilterModels" />
+         </Toolbar>
+   </headerToolbar>
+<columns>
+    <Column id="__column0" >
+        <header>
+            <Text text="{i18n>code}" id="__text1"/>
+        </header>
+    </Column>
+    <Column id="__column1">
+        <header>
+            <Text text="{i18n>modcode}" id="__text2" />
+        </header>
+    </Column>
+    <Column id="__column2">
+        <header>
+            <Text text="{i18n>moddesc}" id="__text3"/>
+        </header>
+    </Column>
+    <Column id="__column3">
+        <header>
+            <Text text="{i18n>price}" id="__text4"/>
+        </header>
+    </Column>
+</columns>
+<items>
+    <ColumnListItem id="__item222" press="onPress" type="Active">
+        <cells>
+            <Label text="{apparelmodels>Code}" id="__label0" />
+            <Label text="{apparelmodels>U_ModCode}" width="100%" id="__label1"  />
+            <Label text="{apparelmodels>U_ModDesc}" width="100%" id="__label2"/>
+            <ObjectNumber number="{apparelmodels>U_Price}" unit="{view>/currency}" id="__number0" emphasized="false"/>
+        </cells>
+    </ColumnListItem>
+</items>
+</Table>
+</mvc:View>

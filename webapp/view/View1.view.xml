@@ -1,0 +1,11 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="capu.controller.View1" displayBlock="true">
+
+	
+	    <TileContainer id="__container0">
+	        <tiles>
+	            <StandardTile title="Lista de Estilos" info="Estilos" icon="sap-icon://customer" activeIcon="sap-icon://customer" id="__tile0" removable="false" press="onPress"/>
+	            <StandardTile title="Lista de Colores" info="Colores" icon="sap-icon://customer" activeIcon="sap-icon://customer" infoState="Success" id="__tile1" press="onPressColor" removable="false"/></tiles>
+	    </TileContainer>
+
+
+</mvc:View>

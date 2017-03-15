@@ -1,0 +1,8 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.PanelInicial">
+<Panel id="__panel0" headerText="{i18n>modelfilter}"  expandable="{device>/system/phone}" expanded="{= !${device>/system/phone} }">
+    <content>
+        <Button text="Filtrar" width="100px" id="__button0" class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop" press="onOpenDialog"/>
+        <Input width="60%" id="__input0" value="{/Modelos/ModCode}" description="{/Modelos/ModName}"/>
+    </content>
+</Panel>
+</mvc:View>

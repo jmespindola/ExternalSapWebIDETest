@@ -1,0 +1,16 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.Login">
+		<App class="myAppDemoWT" id="app">	
+<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" title="Bienvenidos a WEB IDE App" id="__form0">
+    <sap.ui.layout.form:content>
+        <Image width="140px" height="140px" id="__image0" src="images/boca.jpg"/>
+        <core:Title text="Title" id="__title0"/>
+        <Label text="SAP User" id="__label0"/>
+        <Input width="100%" id="txtSapUser" valueLiveUpdate="true"/>
+        <Label text="SAP Password" id="__label1"/>
+        <Input width="100%" id="txtSapPass" type="Password" valueLiveUpdate="true"/>
+        <Label xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" text="CompanyDB" id="__label1_copy"/>
+        <Input xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" width="100%" id="txtSapDB" valueLiveUpdate="true"/>
+        <Button text="Login" width="100px" id="__button0" press="onLogin"/></sap.ui.layout.form:content>
+</sap.ui.layout.form:SimpleForm>
+</App>
+</mvc:View>

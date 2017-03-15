@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+   <Dialog id="helloDialog" title="Hola Puto">
+   <endButton>
+       <Button text="Close" width="100px" id="__button0" press="onCloseDialog"/>
+   </endButton>
+   <content>
+       <core:Icon src="sap-icon://opportunities" size="8em" id="__icon0" tooltip="Imagen"/>
+   </content>
+   </Dialog>
+</core:FragmentDefinition>

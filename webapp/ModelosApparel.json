@@ -1,0 +1,34 @@
+{
+  "ModelosApparel": [
+	{
+	  "Code": "1",
+	  "ModCode": "M001",
+	  "ModDesc": "Camiseta Boca",
+	  "ExtendedPrice" : 22.50
+	},
+	{
+     "Code": "2",
+	  "ModCode": "M002",
+	  "ModDesc": "Camiseta riBer",
+	  "ExtendedPrice" : 28.30
+	},
+	{
+	  	  "Code": "3",
+	  "ModCode": "M003",
+	  "ModDesc": "Camiseta San Lorenzo",
+	  "ExtendedPrice" : 32
+	},
+	{
+	 	  "Code": "4",
+	  "ModCode": "M004",
+	  "ModDesc": "Camiseta Estudiantes",
+	  "ExtendedPrice" : 15.55
+	},
+	{
+	  	  "Code": "5",
+	  "ModCode": "M005",
+	  "ModDesc": "Camiseta Talleres",
+	  "ExtendedPrice" : 13.18
+	}
+  ]
+}

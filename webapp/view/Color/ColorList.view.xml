@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="capu.controller.ColorMaster">
+	    <Table noDataText="Drop column list items here and columns in the area above" items="{apparelmodels>/Color}" id="colorlist" headerText="Color">
+	         <columns>
+	            <Column id="__column0">
+	                <header>
+	                    <Label id="__label0" text="{i18n>code}"/>
+	                </header>
+	            </Column>
+	            <Column id="__column1">
+	                <header>
+	                    <Label text="{i18n>colorcode}" id="__label1"/>
+	                </header>
+	            </Column>
+	            <Column id="__column2">
+	                <header>
+	                    <Label text="{i18n>colordesc}" id="__label2"/>
+	                </header>
+	            </Column></columns>
+	          <items>
+				 <ColumnListItem id="mainListItem" type="Active" selected="true" press="onPress">
+			        <cells>
+			            <Label text="{apparelmodels>Code}" id="__label10"/>
+			            <Label text="{apparelmodels>U_ColCode}" width="100%" id="__label11"/>
+			            <Label text="{apparelmodels>U_ColDesc}" width="100%" id="__label12"/>
+			        </cells>
+				 </ColumnListItem>
+			</items>
+</Table>
+</mvc:View>
